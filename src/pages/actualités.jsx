@@ -10,6 +10,13 @@ function Actualites(){
     
       return (
         <>
+        <div className="relative text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("./src/images/img1.jpg")' }}>
+            <div className="bg-black bg-opacity-50 p-5 ">
+                <h2 className="text-2xl font-bold text-white mb-4">Actualités</h2>
+                
+            </div>
+        </div>
+
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center my-8">À l’écoute de chaque nouvelles</h2>
           <h3 className="text-xl text-center mb-6">KINSHASA ONG Connect</h3>

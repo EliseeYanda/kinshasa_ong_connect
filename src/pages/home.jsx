@@ -37,28 +37,57 @@ const Home = () => {
       </div>
     </div>
 
-    <div className=" bg-white p-5 m-5">
-      <h2 className="text-xl mb-2 font-bold text-center text-3xl font-bold">Que pensez vous ?</h2>
-      <p className="text-gray-700 text-base text-center">
-        Les ONG jouent un rôle vital à Kinshasa, avec un impact significatif sur le bien-être 
-        et le développement de la communauté kinoise.
+    <div className="container mx-auto p-6">
+      <h1 className="text-4xl font-bold text-center mb-6">Qui nous sommes</h1>
+      <p className="text-lg text-center mb-6">
+        Organisation créée pour fournir de l'aide et collecter des fonds à ceux qui en ont besoin.
       </p>
-      <div className="flex justify-between mt-4">
-        <div className="w-1/3 bg-gray-400 h-60"></div>
-        <div className="w-1/3 bg-gray-400 h-60 mx-2"></div>
-        <div className="w-1/3 bg-gray-400 h-60"></div>
+      <div className="grid md:grid-cols-3 gap-4">
+        <div className="bg-white p-4 rounded-lg shadow-md">
+        <img src="src\images\img1.jpg"/>
+          <h2 className="text-xl font-semibold mb-2">Endroits pour se perdre</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+        <img src="src\images\img2.jpg"/>
+          <h2 className="text-xl font-semibold mb-2">Une alimentation saine pour tous</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+           <img src="src\images\img2.jpg"/>
+          <h2 className="text-xl font-semibold mb-2">Organisation verte</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
       </div>
     </div>
-    
+
+    <div className=" bg-gray-200 bg-cover bg-center p-8">
+      <div className="flex p-5 m-5">
+        <div className="md:w-1/2">
+          {/* Remplacez '/path/to/video-thumbnail.jpg' par le chemin réel de votre vignette vidéo ou image */}
+          <img src="src\images\img2.jpg" alt="Enfant sur une balançoire" className="w-full h-auto" />
+        </div>
+        <div className="md:w-1/2 flex flex-col justify-center p-4">
+          <h1 className="text-3xl font-bold mb-3">Communauté de collecte de fonds</h1>
+          <p className="mb-3">Nulla fermentum turpis id nunc tincidunt, vitae hendrerit orci viverra. Nulla facilisi. Duis tempor nisi nec dolor malesuada viverra. Morbi id tempus nisi, à divers enim. Morbi eget augue neque, in iugula.</p>
+          <button className="bg-[#AF631D] text-white font-bold py-2 px-4 rounded transition duration-300">
+            En savoir plus
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div className="relative text-center bg-no-repeat bg-cover bg-center p-5 m-5" style={{ backgroundImage: 'url("./src/images/img1.jpg")' }}>
       <div className="bg-black bg-opacity-50 p-5 ">
-        <h2 className="text-2xl font-bold text-white mb-4">Ensemble nous pouvons</h2>
+        <h2 className="text-4xl font-bold text-white ">Ensemble nous pouvons</h2>
         <p className="text-white mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         <button className="bg-[#AF631D] text-white  py-2 px-4 rounded">
           Faire un don
         </button>
       </div>
     </div>
+
+    
     </>
 
     

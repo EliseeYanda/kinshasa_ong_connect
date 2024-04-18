@@ -14,7 +14,7 @@ function NavBar() {
                     <NavLink to="/ong" className="hover:text-[#AF631D]">ONG</NavLink>
                     <NavLink to="/actualites" className="hover:text-[#AF631D]">Actualités</NavLink>
                     <NavLink to="/contact" className="hover:text-[#AF631D]">Contact</NavLink>
-                    <NavLink to="/don" className="px-4 py-2 bg-[#AF631D] rounded hover:bg-[#AF631D]">Faire un don</NavLink>
+                    <NavLink to="/don" className="px-4 py-2 bg-[#AF631D] text-white rounded hover:bg-[#AF631D]">Faire un don</NavLink>
                 </div>
             </nav>
         </div>
