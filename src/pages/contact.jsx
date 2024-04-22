@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    nom: '',
+    noms: '',
     email: '',
+    sujet: '',
     message: ''
   });
 
@@ -17,31 +18,64 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ici, vous pouvez gérer l'envoi des données du formulaire
+    // Traiter les données du formulaire ici
     console.log(formData);
   };
 
   return (
-    <div className="bg-[url('./src/images/arrière plan.jpg')] bg-cover bg-center p-20 flex  items-center h-screen">
-      <form className="bg-white p-20 rounded shadow-md" onSubmit={handleSubmit}>
-        <h2 className="text-2xl font-bold mb-4">Contactez-nous</h2>
-        <div className="mb-4">
-          <label htmlFor="nom" className="block text-gray-700 text-sm font-bold mb-2">Nom</label>
-          <input type="text" id="nom" name="nom" value={formData.nom} onChange={handleChange} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
-        </div>
-        <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
-        </div>
-        <div className="mb-6">
-          <label htmlFor="message" className="block text-gray-700 text-sm font-bold mb-2">Message</label>
-          <textarea id="message" name="message" value={formData.message} onChange={handleChange} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
-        </div>
-        <button type="submit" className="bg-[#AF631D] hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-            ENVOYER
-        </button>
-      </form>
+    <>
+    <div className="relative text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
+            <div className=" ">
+                <h2 className="text-5xl font-bold text-white mb-4">Contactez-Nous</h2>
+                
+            </div>
     </div>
+
+    <div className="container mx-auto p-4 flex">
+      <div className="w-1/2 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="noms">
+              Noms
+            </label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="noms" type="text" placeholder="Vos noms" name="noms" value={formData.noms} onChange={handleChange} />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+              Email
+            </label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Votre email" name="email" value={formData.email} onChange={handleChange} />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="sujet">
+              Sujet
+            </label>
+            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="sujet" type="text" placeholder="Le sujet de votre message" name="sujet" value={formData.sujet} onChange={handleChange} />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+              Message
+            </label>
+            <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Votre message" name="message" value={formData.message} onChange={handleChange} />
+          </div>
+          <div className="flex items-center justify-between">
+            <button className="bg-[#AF631D] text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+              Envoyer
+            </button>
+          </div>
+        </form>
+      </div>
+      <div className="w-1/2 p-8">
+        <h1 className="text-3xl font-bold mb-4">KINSHASA ONG Connect</h1>
+        <p className="text-gray-700 text-base">
+          Au cœur de Kinshasa, la vibrante capitale de la République Démocratique du Congo, 
+          les ONG épanouissent comme des oasis de changement et espoir. Parmi elles, 
+          Kinshasa ONG Connect se démarque comme une plateforme, unissant les forces pour un impact plus profond et plus large.
+        </p>
+      </div>
+    </div>
+    </>
   );
 };
 

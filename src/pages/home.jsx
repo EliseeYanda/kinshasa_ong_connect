@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
+    
   return (
     <>
     <div className=" flex  justify-center p-40 m-5 bg-center bg-cover " style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
@@ -81,30 +82,26 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="relative text-center bg-no-repeat bg-cover bg-center p-5 m-5" style={{ backgroundImage: 'url("./src/images/img1.jpg")' }}>
-      <div className="bg-black bg-opacity-50 p-5 ">
+    <div className="relative text-center bg-no-repeat bg-cover bg-center p-5 m-5" style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
+      <div className="">
         <h2 className="text-4xl font-bold text-white ">Ensemble nous pouvons</h2>
         <p className="text-white mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         <button className="bg-[#AF631D] text-white  py-2 px-4 rounded">
-          Contactez-Nous
+          <NavLink to="/contact" className="no-underline text-white">Contactez-Nous</NavLink>
         </button>
       </div>
     </div>
 
-    <div className="bg-gray-100 p-10 flex flex-col items-center justify-center">
+    <div className="bg-gray-100 p-10 flex flex-col items-center justify-center m-5">
       <div className="bg-white shadow-lg rounded-full w-24 h-24 mb-4">
         {/* Insérez ici l'avatar de la personne */}
       </div>
       <blockquote className="italic text-center">
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Impedit ipsam fuga sunt qui excepturi optio porro magni tempore libero voluptatum illo iste, 
-        similique officia commodi perferendis voluptate culpa odio recusandae!."
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem nobis excepturi similique tempore cum sunt, sint ipsam quaerat. 
+        Aut aliquam iste expedita atque fugit perspiciatis ipsam voluptates, tenetur veniam provident.
       </blockquote>
-      <div className="flex mt-4">
-        <span className="h-3 w-3 bg-gold-500 rounded-full mr-1"></span>
-        <span className="h-3 w-3 bg-orange-500 rounded-full mr-1"></span>
-        <span className="h-3 w-3 bg-black rounded-full"></span>
-      </div>
+      
     </div>
 
     

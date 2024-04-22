@@ -8,7 +8,7 @@ import Inscription from './pages/inscription.jsx';
 import Layout from "./pages/layout.jsx";
 import Ong from './pages/ong.jsx';
 import Actualites from './pages/actualités.jsx';
-
+import Profil from './pages/profil.jsx';
 
 
 const router = createBrowserRouter(
@@ -29,6 +29,10 @@ const router = createBrowserRouter(
                 {
                     path: "/inscription",
                     element: <Inscription/>
+                },
+                {
+                    path: "/profil",
+                    element: <Profil/>
                 },
                 {
                     path: "/ong",

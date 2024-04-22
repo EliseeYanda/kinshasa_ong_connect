@@ -11,8 +11,8 @@ function Actualites(){
       return (
         <>
         <div className="relative text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("./src/images/img1.jpg")' }}>
-            <div className="bg-black bg-opacity-50 p-5 ">
-                <h2 className="text-2xl font-bold text-white mb-4">Actualités</h2>
+            <div className=" ">
+                <h2 className="text-5xl font-bold text-white mb-4">Actualités</h2>
                 
             </div>
         </div>
