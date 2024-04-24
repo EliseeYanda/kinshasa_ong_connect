@@ -10,7 +10,7 @@ function Actualites(){
     
       return (
         <>
-        <div className="relative text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("./src/images/img1.jpg")' }}>
+        <div className=" text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("/src/images/img9.jpg")' }}>
             <div className=" ">
                 <h2 className="text-5xl font-bold text-white mb-4">Actualités</h2>
                 
@@ -24,7 +24,7 @@ function Actualites(){
             {articles.map((article, index) => (
               <div key={index} className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
                 <div className="bg-white rounded shadow p-4">
-                  <div className="bg-gray-300 h-48 mb-4"></div> {/* Emplacement pour l'image */}
+                  <img src="src\images\img6.jpg" alt=""  /> 
                   <h4 className="font-semibold mb-2">{article.title}</h4>
                   <p className="text-gray-700 mb-4">{article.content}</p>
                   <NavLink className=" text-blue-500 hover:text-gray-500  py-2 px-4">
@@ -42,7 +42,8 @@ function Actualites(){
             {articles.map((article, index) => (
               <div key={index} className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
                 <div className="bg-white rounded shadow p-4">
-                  <div className="bg-gray-300 h-48 mb-4"></div> {/* Emplacement pour l'image */}
+                  
+                  <img src="src\images\img2.jpg" alt=""  />
                   <h4 className="font-semibold mb-2">{article.title}</h4>
                   <p className="text-gray-700 mb-4">{article.content}</p>
                   <NavLink className=" text-blue-500 hover:text-gray-500  py-2 px-4">
@@ -60,7 +61,25 @@ function Actualites(){
             {articles.map((article, index) => (
               <div key={index} className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
                 <div className="bg-white rounded shadow p-4">
-                  <div className="bg-gray-300 h-48 mb-4"></div> {/* Emplacement pour l'image */}
+                  <img src="src\images\img4.jpg" alt="" />
+                  <h4 className="font-semibold mb-2">{article.title}</h4>
+                  <p className="text-gray-700 mb-4">{article.content}</p>
+                  <NavLink className=" text-blue-500 hover:text-gray-500  py-2 px-4">
+                    En savoir plus
+                  </NavLink>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4">
+          
+          <div className="flex flex-wrap -mx-2">
+            {articles.map((article, index) => (
+              <div key={index} className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+                <div className="bg-white rounded shadow p-4">
+                  <img src="src\images\img9.jpg" alt="" />
                   <h4 className="font-semibold mb-2">{article.title}</h4>
                   <p className="text-gray-700 mb-4">{article.content}</p>
                   <NavLink className=" text-blue-500 hover:text-gray-500  py-2 px-4">
@@ -73,6 +92,6 @@ function Actualites(){
         </div>
         </>
       );
-};
+}
 
 export default Actualites;

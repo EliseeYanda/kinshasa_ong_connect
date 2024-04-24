@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <>
-    <div className="relative text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
+    <div className=" text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
             <div className=" ">
                 <h2 className="text-5xl font-bold text-white mb-4">Contactez-Nous</h2>
                 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
@@ -8,16 +7,15 @@ const Footer = () => {
         <div>
           <h2 className="font-bold text-[#AF631D] mb-3 text-xl">À propos de nous</h2>
           <p className="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Iste minima natus hic accusamus expedita autem alias! Ipsum totam pariatur molestiae voluptatem sint, 
-          libero corporis suscipit eius repellat saepe enim blanditiis!</p>
+          Iste minima natus hic accusamus expedita </p>
           <p>Visitez-nous : Concession COTEX N° 63, Ave Colonel Mondjiba, Kinshasa, Ref : Show Buzz</p>
         </div>
         <div>
           <h2 className="font-bold text-[#AF631D] mb-3 text-xl">Derniers messages</h2>
           <ul>
-            <li>lorem lorem lorem lorem lorem - 5 janvier 2024</li>
-            <li>lorem lorem lorem lorem lorem - 5 janvier 2024</li>
-            <li>lorem lorem lorem lorem lorem - 5 janvier 2024</li>
+            <li>lorem lorem lorem lorem </li>
+            <li>lorem lorem lorem lorem </li>
+            <li>lorem lorem lorem lorem </li>
           </ul>
         </div>
         <div>
@@ -25,7 +23,7 @@ const Footer = () => {
           <ul>
             <li>Contact</li>
             <li>Inscription</li>
-            <li>Contribuez à l'oeuvre</li>
+            <li>Faire un don</li>
             <li>Nouvelles</li>
             
           </ul>

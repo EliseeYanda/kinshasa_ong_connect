@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Profil from './profil';
+import { useState } from 'react';
+
 
 // Composant de barre de recherche
-const SearchBar = ({ onSearch }) => {
+const SearchBar = (onSearch) => {
   const [query, setQuery] = useState('');
 
   // Gère la mise à jour de la requête de recherche
@@ -27,7 +27,7 @@ const SearchBar = ({ onSearch }) => {
       />
       <button
         type="submit"
-        className="px-4 text-white bg-blue-500 rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="px-4 text-white bg-[#AF631D] rounded-r-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         {/* Icône de loupe */}
       </button>
@@ -35,22 +35,21 @@ const SearchBar = ({ onSearch }) => {
   );
 };
 
-// Composant Ong avec un design amélioré
 const Ong = () => {
-  const [ongs, setOngs] = useState([
-    // Ajoutez des images et des liens pour chaque ONG ici
+  const [ongs] = useState([
+    
     { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img2.jpg', link: '/lien-vers-plus-dinfos-1' },
-    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img2.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/arrière plan.jpg', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img2.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img8.jpg', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img2.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img6.jpg', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img2.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img7.jpg', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img2.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img5.jpg', link: '/lien-vers-plus-dinfos-1' },
 
-    // Répétez pour chaque ONG...
+    
   ]);
   const [filteredOngs, setFilteredOngs] = useState(ongs);
 

@@ -8,7 +8,8 @@ import Inscription from './pages/inscription.jsx';
 import Layout from "./pages/layout.jsx";
 import Ong from './pages/ong.jsx';
 import Actualites from './pages/actualités.jsx';
-import Profil from './pages/profil.jsx';
+import Don from './pages/don.jsx';
+
 
 
 const router = createBrowserRouter(
@@ -31,27 +32,19 @@ const router = createBrowserRouter(
                     element: <Inscription/>
                 },
                 {
-                    path: "/profil",
-                    element: <Profil/>
+                    path: "/don",
+                    element: <Don/>
                 },
                 {
                     path: "/ong",
                     element: <Ong/>
                 },
+                
                 {
                      path: "/actualites",
                      element: <Actualites/>
-                    //  children: [
-                    //     //  {
-                    //     //      path: "",
-                    //     //      element: <ProductsList/>
-                    //     //  },
-                    //     //  {
-                    //     //      path: ":id",
-                    //     //      element: <SingleProduct/>
-                    //     //  }
-                    //  ]
-                },
+        
+                }
             ]
         },
 

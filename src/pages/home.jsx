@@ -1,11 +1,15 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Inscription from './inscription';// Importez le composant modal
+import { useState } from 'react';
 
 const Home = () => {
-    
+  const [showModal, setShowModal] = useState(false); // État pour gérer la visibilité du modal
+
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
   return (
     <>
-    <div className=" flex  justify-center p-40 m-5 bg-center bg-cover " style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
+    <div className=" flex  justify-center p-40 m-5 bg-center bg-cover " style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
       
       <div className="text-center">
         <h1 className="text-5xl font-bold text-white">KINSHASA ONG Connect</h1>
@@ -14,8 +18,8 @@ const Home = () => {
           <button className="px-6 py-2  bg-white rounded ">
             <NavLink to="/contact" className="no-underline text-[#AF631D]">Contactez-Nous</NavLink>
           </button>
-          <button className="px-6 py-2 text-white bg-[#AF631D] rounded">
-            <NavLink to="/inscription" className="no-underline text-white">Inscrivez-Vous</NavLink>
+          <button className="px-6 py-2 text-white bg-[#AF631D] rounded" onClick={openModal}>
+            <NavLink to="#" className="no-underline text-white">Inscrivez-Vous</NavLink>
           </button>
         </div>
       </div>
@@ -31,9 +35,9 @@ const Home = () => {
         <div className="md:w-1/2 flex flex-col justify-center p-4">
           <h1 className="text-3xl font-bold mb-3">Ensemble pour Kinshasa, unis pour l’humanité</h1>
           <p className="mb-3">Kinshasa ONG Connect est le carrefour où les organisations non gouvernementales 
-          de Kinshasa se rencontrent pour tisser un réseau de solidarité et d'innovation. 
-          Notre plateforme est dédiée à la collaboration, au partage des ressources et à l'amplification 
-          de l'impact social à travers la capitale congolaise..</p>
+          de Kinshasa se rencontrent pour tisser un réseau de solidarité et innovation. 
+          Notre plateforme est dédiée à la collaboration, au partage des ressources et à amplification 
+          de impact social à travers la capitale congolaise..</p>
           
         </div>
       </div>
@@ -47,17 +51,17 @@ const Home = () => {
       </p>
       <div className="grid md:grid-cols-3 gap-4">
         <div className="bg-white p-4 rounded-lg shadow-md">
-        <img src="src\images\img1.jpg"/>
+        <img src="src\images\img6.jpg"/>
           <h2 className="text-xl font-semibold mb-2">Endroits pour se perdre</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </div>
         <div className="bg-white p-4 rounded-lg shadow-md">
-        <img src="src\images\img2.jpg"/>
+        <img src="src\images\img6.jpg"/>
           <h2 className="text-xl font-semibold mb-2">Une alimentation saine pour tous</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </div>
         <div className="bg-white p-4 rounded-lg shadow-md">
-           <img src="src\images\img2.jpg"/>
+           <img src="src\images\img6.jpg"/>
           <h2 className="text-xl font-semibold mb-2">Organisation verte</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </div>
@@ -67,8 +71,7 @@ const Home = () => {
     <div className=" bg-gray-200 bg-cover bg-center p-8">
       <div className="flex p-5 m-5">
         <div className="md:w-1/2">
-          {/* Remplacez '/path/to/video-thumbnail.jpg' par le chemin réel de votre vignette vidéo ou image */}
-          <img src="src\images\img2.jpg" alt="Enfant sur une balançoire" className="w-full h-auto" />
+          <img src="src\images\img9.jpg" alt="Enfant sur une balançoire" className="w-full h-auto" />
         </div>
         <div className="md:w-1/2 flex flex-col justify-center p-4">
           <h1 className="text-3xl font-bold mb-3">Communauté de collecte de fonds</h1>
@@ -82,7 +85,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="relative text-center bg-no-repeat bg-cover bg-center p-5 m-5" style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
+    <div className="relative text-center bg-no-repeat bg-cover bg-center p-5 m-5" style={{ backgroundImage: 'url("./src/images/img6.jpg")' }}>
       <div className="">
         <h2 className="text-4xl font-bold text-white ">Ensemble nous pouvons</h2>
         <p className="text-white mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -104,7 +107,7 @@ const Home = () => {
       
     </div>
 
-    
+    <Inscription isOpen={showModal} onClose={closeModal} />
     </>
 
     
