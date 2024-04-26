@@ -1,4 +1,3 @@
-// DonModal.jsx
 import  { useState } from 'react';
 
 const Don = ({ isOpen, onClose }) => {
