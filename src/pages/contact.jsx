@@ -24,15 +24,12 @@ const Contact = () => {
 
   return (
     <>
-    <div className=" text-center bg-no-repeat bg-cover bg-center p-20 m-5" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
-            <div className=" ">
-                <h2 className="text-5xl font-bold text-white mb-4">Contactez-Nous</h2>
-                
-            </div>
+    <div className="text-center bg-no-repeat bg-cover bg-center p-10 sm:p-20 m-5" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
+      <h2 className="text-3xl sm:text-5xl font-bold text-white mb-4">Contactez-Nous</h2>
     </div>
 
-    <div className="container mx-auto p-4 flex">
-      <div className="w-1/2 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div className="container mx-auto p-4 flex flex-wrap">
+      <div className="w-full md:w-1/2 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -66,9 +63,9 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div className="w-1/2 p-8">
-        <h1 className="text-3xl font-bold mb-4">KINSHASA ONG Connect</h1>
-        <p className="text-gray-700 text-base">
+      <div className="w-full md:w-1/2 p-8">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-4">KINSHASA ONG Connect</h1>
+        <p className="text-gray-700 text-sm sm:text-base">
           Au cœur de Kinshasa, la vibrante capitale de la République Démocratique du Congo, 
           les ONG épanouissent comme des oasis de changement et espoir. Parmi elles, 
           Kinshasa ONG Connect se démarque comme une plateforme, unissant les forces pour un impact plus profond et plus large.
