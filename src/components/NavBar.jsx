@@ -14,7 +14,7 @@ function NavBar() {
     setMenuOpen(!menuOpen);
   };
     return (
-<div className="overflow-hidden shadow-lg p-5 m-5 bg-black">
+<div className="overflow-hidden shadow-lg p-5 bg-black z-10">
   <nav className="flex justify-between items-center w-full p-1 text-white bg-opacity-50">
     <div className="flex items-center space-x-4">
       {/* Placeholder pour le logo */}
@@ -41,11 +41,11 @@ function NavBar() {
     </div>
   </nav>
   {/* Contenu du menu mobile */}
-  <div className={`absolute top-10 right-2 transform -translate-x-1/2  max-w-md bg-black  p-5 rounded-b-lg ${menuOpen ? 'block' : 'hidden'}`}>
-    <NavLink to="/home" className="block px-4 py-2 text-white hover:text-[#AF631D]">Accueil</NavLink>
-    <NavLink to="/ong" className="block px-4 py-2 text-white hover:text-[#AF631D]">ONG</NavLink>
-    <NavLink to="/actualites" className="block px-4 py-2 text-white hover:text-[#AF631D]">Actualités</NavLink>
-    <NavLink to="/contact" className="block px-4 py-2 text-white hover:text-[#AF631D]">Contact</NavLink>
+  <div className={`absolute top-10 right-2 transform -translate-x-1/2  max-w-md bg-white   rounded-b-lg ${menuOpen ? 'block' : 'hidden'}`}>
+    <NavLink to="/home" className="block px-4 py-2 text-black hover:text-[#AF631D]">Accueil</NavLink>
+    <NavLink to="/ong" className="block px-4 py-2 text-black hover:text-[#AF631D]">ONG</NavLink>
+    <NavLink to="/actualites" className="block px-4 py-2 text-black hover:text-[#AF631D]">Actualités</NavLink>
+    <NavLink to="/contact" className="block px-4 py-2 text-black hover:text-[#AF631D]">Contact</NavLink>
     <NavLink to="#" className="block px-4 py-2 text-white bg-[#AF631D] rounded hover:bg-[#AF631D]" onClick={openDonModal}>Faire un don</NavLink>
   </div>
 

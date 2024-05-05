@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import Inscription from './inscription';// Importez le composant modal
 import { useState } from 'react';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 const Home = () => {
@@ -10,23 +12,64 @@ const Home = () => {
   const closeModal = () => setShowModal(false);
   return (
     <>
-  <div className="flex justify-center px-5 py-20 m-5 bg-center bg-cover sm:p-40" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
-    <div className="text-center">
-        <h1 className="text-3xl font-bold text-white sm:text-5xl">KINSHASA ONG Connect</h1>
-        <h3 className="mt-4 text-lg text-white sm:text-xl">Unis pour relever les défis humanitaires</h3>
-      <div className="mt-8 space-x-4">
-        <button className="px-4 py-1 bg-white rounded sm:px-6 sm:py-2">
-          <NavLink to="/contact" className="no-underline text-[#AF631D]">Contactez-Nous</NavLink>
-        </button>
-        <button className="px-4 py-1 text-white bg-[#AF631D] rounded sm:px-6 sm:py-2" onClick={openModal}>
-          <NavLink to="#" className="no-underline text-white">Inscrivez-Vous</NavLink>
-        </button>
-      </div>
-    </div>
-  </div>
+<section className="text-white text-center  font-bold">
+      <Carousel
+        showArrows={false}
+        showStatus={false}
+        showThumbs={false}
+        infiniteLoop
+        autoPlay
+      >
+        <div className="flex justify-center items-center bg-center bg-cover p-10 md:p-40 bg-opacity-90 bg-black h-screen" style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
+          <div className="text-center">
+              <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">KINSHASA ONG Connect</h1>
+              <h3 className="mt-4 text-sm md:text-lg lg:text-xl">Unis pour relever les défis humanitaires</h3>
+            <div className="mt-8 space-x-2 md:space-x-4">
+              <button className="px-3 py-1 md:px-4 md:py-2 bg-white rounded">
+                <NavLink to="/contact" className="no-underline text-[#AF631D]">Contactez-Nous</NavLink>
+              </button>
+              <button className="px-3 py-1 md:px-4 md:py-2 text-white bg-[#AF631D] rounded" onClick={openModal}>
+                <NavLink to="#" className="no-underline text-white">Inscrivez-Vous</NavLink>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center bg-center bg-cover p-10 md:p-40 bg-opacity-90 bg-black h-screen" style={{ backgroundImage: 'url("./src/images/img8.jpg")' }}>
+          <div className="text-center">
+              <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">KINSHASA ONG Connect</h1>
+              <h3 className="mt-4 text-sm md:text-lg lg:text-xl">Unis pour relever les défis humanitaires</h3>
+            <div className="mt-8 space-x-2 md:space-x-4">
+              <button className="px-3 py-1 md:px-4 md:py-2 bg-white rounded">
+                <NavLink to="/contact" className="no-underline text-[#AF631D]">Contactez-Nous</NavLink>
+              </button>
+              <button className="px-3 py-1 md:px-4 md:py-2 text-white bg-[#AF631D] rounded" onClick={openModal}>
+                <NavLink to="#" className="no-underline text-white">Inscrivez-Vous</NavLink>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center bg-center bg-cover p-10 md:p-40 bg-opacity-90 bg-black h-screen" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
+          <div className="text-center">
+              <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">KINSHASA ONG Connect</h1>
+              <h3 className="mt-4 text-sm md:text-lg lg:text-xl">Unis pour relever les défis humanitaires</h3>
+            <div className="mt-8 space-x-2 md:space-x-4">
+              <button className="px-3 py-1 md:px-4 md:py-2 bg-white rounded">
+                <NavLink to="/contact" className="no-underline text-[#AF631D]">Contactez-Nous</NavLink>
+              </button>
+              <button className="px-3 py-1 md:px-4 md:py-2 text-white bg-[#AF631D] rounded" onClick={openModal}>
+                <NavLink to="#" className="no-underline text-white">Inscrivez-Vous</NavLink>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </Carousel>
+    </section>
 
 
-<div className="bg-gray-200 bg-cover bg-center p-4 sm:p-8 m-5">
+<div className="bg-gray-200 bg-cover bg-center p-4 sm:p-8 ">
   <div className="flex flex-col sm:flex-row p-5 m-5">
     <div className="w-full sm:w-1/2 p-5">
       <h1 className='text-3xl sm:text-5xl font-bold text-[#AF631D]'>BIENVENU(e)</h1>
@@ -80,6 +123,9 @@ const Home = () => {
     <div className="w-full md:w-1/2">
       <img src="src/images/img9.jpg" alt="Enfant sur une balançoire" className="w-full h-auto" />
     </div>
+    <div className="w-full md:w-1/2">
+      <img src="src/images/img6.jpg" alt="Enfant sur une balançoire" className="w-full h-auto" />
+    </div>
     
   </div>
 </div>
@@ -110,15 +156,13 @@ const Home = () => {
             Faite un choix.
           </li>
         </ul>
-        <button className="bg-[#AF631D] text-white py-2 px-4 rounded transition duration-300">
-          Contactez-Nous
-        </button>
+        
       </div>
       
     </div>
 
 
-<div className="relative text-center bg-no-repeat bg-cover bg-center p-5 m-5" style={{ backgroundImage: 'url("./src/images/img6.jpg")' }}>
+<div className="relative text-center bg-no-repeat bg-cover bg-center p-5" style={{ backgroundImage: 'url("./src/images/img6.jpg")' }}>
   <div className="">
     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white ">Ensemble nous pouvons</h2>
     <p className="text-white mb-4 sm:mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -128,7 +172,7 @@ const Home = () => {
   </div>
 </div>
 
-<div className="bg-gray-100 p-6 sm:p-10 flex flex-col items-center justify-center m-5">
+<div className="bg-gray-100 p-6 sm:p-10 flex flex-col items-center justify-center ">
   <div className="bg-white shadow-lg rounded-full w-16 h-16 sm:w-24 sm:h-24 mb-4">
     {/* Insérez ici l'avatar de la personne */}
   </div>

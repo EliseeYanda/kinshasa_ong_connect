@@ -64,18 +64,18 @@ const Ong = () => {
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="w-full p-4 flex justify-between">
-        <h2 className="text-xl font-bold">KINSHASA ONG Connect présente :</h2>
+      <div className="w-full p-4 flex flex-col md:flex-row justify-between">
+        <h2 className="text-xl font-bold mb-4 md:mb-0">KINSHASA ONG Connect présente :</h2>
         <SearchBar onSearch={handleSearch} />
       </div>
       <div className="flex flex-wrap justify-center w-full">
         {filteredOngs.map((ongs, index) => (
-          <div key={index} className="m-4 w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+          <div key={index} className="m-4 w-full sm:w-80 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
             <img src={ongs.image} alt={`Actualité de ${ongs.name}`} className="w-full h-40 object-cover rounded-t-lg" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{ongs.name}</h3>
               <p className="text-sm">{ongs.address}</p>
-              <a href="Profil" to="/profil" className="text-blue-500 hover:underline">En savoir plus</a>
+              <a href={ongs.link} className="text-blue-500 hover:underline">En savoir plus</a>
             </div>
           </div>
         ))}

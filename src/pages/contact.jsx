@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <>
-    <div className="text-center bg-no-repeat bg-cover bg-center p-10 sm:p-20 m-5" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
+    <div className="text-center bg-no-repeat bg-cover bg-center p-10 sm:p-20" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
       <h2 className="text-3xl sm:text-5xl font-bold text-white mb-4">Contactez-Nous</h2>
     </div>
 
