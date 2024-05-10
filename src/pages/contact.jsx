@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <>
-    <div className="text-center bg-no-repeat bg-cover bg-center p-10 sm:p-20" style={{ backgroundImage: 'url("./src/images/img7.jpg")' }}>
+    <div className="text-center bg-no-repeat bg-cover bg-center p-10 sm:p-20" style={{ backgroundImage: 'url("https://img.freepik.com/photos-gratuite/enfant-africain-qui-profite-vie_23-2151448529.jpg?t=st=1715339342~exp=1715342942~hmac=91cb79a739ede53f7db694e936fe49cb3cb82a03a36140cd782f6159756ddc5f&w=740")' }}>
       <h2 className="text-3xl sm:text-5xl font-bold text-white mb-4">Contactez-Nous</h2>
     </div>
 

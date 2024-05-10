@@ -19,7 +19,7 @@ function NavBar() {
     <div className="flex items-center space-x-4">
       {/* Placeholder pour le logo */}
       <div className="w-12 h-12 bg-gray-300 rounded-full">
-        <img src="src/images/logo1.png" alt="Logo KOC" />
+        
       </div>
       <span className="hidden md:block text-xl font-bold">KOC</span>
     </div>

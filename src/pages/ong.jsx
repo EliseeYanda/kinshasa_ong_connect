@@ -38,16 +38,16 @@ const SearchBar = (onSearch) => {
 const Ong = () => {
   const [ongs] = useState([
     
-    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img2.jpg', link: '/lien-vers-plus-dinfos-1' },
-    { name: 'Aide les demunis', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/arrière plan.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Oeuvre d\'amour', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'https://img.freepik.com/photos-gratuite/enfant-africain-qui-profite-vie_23-2151447673.jpg?w=740&t=st=1715338766~exp=1715339366~hmac=ae0f731a5f9b7a70016c482f6929c70cc5cda1c1e74d007e4cb254183f87e213', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Aide les demunis', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'https://img.freepik.com/photos-gratuite/vue-laterale-enfants-qui-passent-du-temps-exterieur_23-2150903291.jpg?t=st=1715339039~exp=1715342639~hmac=677d1799b33697824c8f38a0cf33dfbc682e32e516cdef3159189763b1d38f78&w=826', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'ONG Ensemble', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img8.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'ONG Ensemble', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'https://img.freepik.com/photos-gratuite/vue-laterale-heureuse-mere-tenue-bebe_23-2150921971.jpg?t=st=1715339169~exp=1715342769~hmac=9a6a54a09dae7bc52853eb23788c5fd014c9072db431548f10bd85b9fc702b2f&w=740', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'Soutenons notre pays', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img6.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Soutenons notre pays', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'https://img.freepik.com/photos-gratuite/enfant-africain-qui-profite-vie_23-2151447673.jpg?w=740&t=st=1715338766~exp=1715339366~hmac=ae0f731a5f9b7a70016c482f6929c70cc5cda1c1e74d007e4cb254183f87e213', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'Bon Serviteur', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img7.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'Bon Serviteur', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'https://img.freepik.com/photos-gratuite/vue-laterale-enfants-qui-passent-du-temps-exterieur_23-2150903291.jpg?t=st=1715339039~exp=1715342639~hmac=677d1799b33697824c8f38a0cf33dfbc682e32e516cdef3159189763b1d38f78&w=826', link: '/lien-vers-plus-dinfos-1' },
 
-    { name: 'ONG Dieu est bon', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'src/images/img5.jpg', link: '/lien-vers-plus-dinfos-1' },
+    { name: 'ONG Dieu est bon', address: '48, rue Oukala, Christiana ville de Kinshasa', image: 'https://img.freepik.com/photos-gratuite/vue-laterale-heureuse-mere-tenue-bebe_23-2150921971.jpg?t=st=1715339169~exp=1715342769~hmac=9a6a54a09dae7bc52853eb23788c5fd014c9072db431548f10bd85b9fc702b2f&w=740', link: '/lien-vers-plus-dinfos-1' },
 
     
   ]);
