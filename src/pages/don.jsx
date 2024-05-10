@@ -12,7 +12,7 @@ const Don = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 overflow-y-auto h-full w-full" id="don-modal">
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-10 overflow-y-auto h-full w-full" id="don-modal">
       <div className="relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 border w-full max-w-md shadow-lg rounded-md bg-white">
         <div className="mt-3 text-center">
           <h3 className="text-lg font-bold text-gray-900">Faire un Don</h3>

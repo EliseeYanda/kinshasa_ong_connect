@@ -132,7 +132,6 @@ const Home = () => {
 
 <div className="flex flex-col md:flex-row items-center bg-gray-100 p-8">
       <div className="md:w-1/2 p-4">
-        {/* Remplacez 'path-to-your-image.jpg' par le chemin réel de votre image */}
         <img src="src/images/img9.jpg" alt="CodeLikeAGirl" className="rounded-lg shadow-lg" />
       </div>
       <div className="md:w-1/2 p-4">
@@ -174,7 +173,7 @@ const Home = () => {
 
 <div className="bg-gray-100 p-6 sm:p-10 flex flex-col items-center justify-center ">
   <div className="bg-white shadow-lg rounded-full w-16 h-16 sm:w-24 sm:h-24 mb-4">
-    {/* Insérez ici l'avatar de la personne */}
+    
   </div>
   <blockquote className="italic text-center text-sm sm:text-base">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. 

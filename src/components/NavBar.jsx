@@ -33,7 +33,6 @@ function NavBar() {
     {/* Bouton de menu pour les écrans mobiles */}
     <div className="md:hidden flex items-center">
       <button type="button" className="text-white" onClick={toggleMenu}>
-        {/* Icône de menu (exemple avec Heroicons) */}
         <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
@@ -41,7 +40,7 @@ function NavBar() {
     </div>
   </nav>
   {/* Contenu du menu mobile */}
-  <div className={`absolute top-10 right-2 transform -translate-x-1/2  max-w-md bg-white   rounded-b-lg ${menuOpen ? 'block' : 'hidden'}`}>
+  <div className={`absolute top-10 right-2 z-10 transform -translate-x-1/2  max-w-md bg-white   rounded-b-lg ${menuOpen ? 'block' : 'hidden'}`}>
     <NavLink to="/home" className="block px-4 py-2 text-black hover:text-[#AF631D]">Accueil</NavLink>
     <NavLink to="/ong" className="block px-4 py-2 text-black hover:text-[#AF631D]">ONG</NavLink>
     <NavLink to="/actualites" className="block px-4 py-2 text-black hover:text-[#AF631D]">Actualités</NavLink>
