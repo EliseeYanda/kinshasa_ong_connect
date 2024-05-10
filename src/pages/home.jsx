@@ -20,7 +20,7 @@ const Home = () => {
         infiniteLoop
         autoPlay
       >
-        <div className="flex justify-center items-center bg-center bg-cover p-10 md:p-40 bg-opacity-90 bg-black h-screen" style={{ backgroundImage: 'url("./src/images/arrière plan.jpg")' }}>
+        <div className="flex justify-center items-center bg-center bg-cover p-10 md:p-40 bg-opacity-90 bg-black h-screen" style={{ backgroundImage: 'url("https://fr.freepik.com/photos-premium/journee-amitie-enfants_57663925.htm#fromView=search&page=1&position=21&uuid=149f4acf-f448-4b92-a71b-b3013aef9fe8")' }}>
           <div className="text-center">
               <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold">KINSHASA ONG Connect</h1>
               <h3 className="mt-4 text-sm md:text-lg lg:text-xl">Unis pour relever les défis humanitaires</h3>
