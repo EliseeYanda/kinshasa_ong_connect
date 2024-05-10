@@ -12,7 +12,7 @@ const Footer = () => {
           <p className="text-sm">Visitez-nous : Concession COTEX N° 63, Ave Colonel Mondjiba, Kinshasa, Ref : Show Buzz</p>
         </div>
         <div>
-          <h2 className="font-bold text-[#AF631D] mb-3 text-xl">Derniers messages</h2>
+          <h2 className="font-bold text-[#AF631D] mb-3 text-xl">Messages</h2>
           <ul>
             <li>lorem lorem lorem lorem </li>
             <li>lorem lorem lorem lorem </li>
